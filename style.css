@@ -1,0 +1,37 @@
+#videos {
+  display: flex;
+}
+
+#localstream,
+#remotestream {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#localstream > h1,
+#remotestream > h1 {
+  padding: 20px;
+  padding-left: 100px;
+}
+
+video {
+  background: black;
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: 1em;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #videos {
+    display: flex;
+    flex-direction: column;
+  }
+}

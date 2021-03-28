@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Call</title>
+  </head>
+  <body>
+    <div id="videos">
+      <div id="localstream">
+        <h1>Local Stream</h1>
+        <video id="localvideo" playsinline autoplay></video>
+      </div>
+      <div id="remotestream">
+        <h1>Remote Stream</h1>
+        <video id="remotevideo" playsinline autoplay></video>
+      </div>
+    </div>
+    <br /><br />
+    <button id="start">Start the Webcam</button><br />
+    <button id="call" disabled>Create a new Call</button><br />
+    <input id="callInput" />
+    <button id="answer" disabled>Join a Call</button><br />
+    <button id="hangup" disabled>Hang Up</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
